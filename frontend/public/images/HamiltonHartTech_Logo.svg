@@ -1,0 +1,14 @@
+<svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo">
+<rect id="Rectangle 20" x="22.5" y="0.5" width="6.875" height="50" fill="black"/>
+<g id="Group 3">
+<rect id="Rectangle 14" x="3.125" y="9.875" width="6.875" height="37.5" fill="black"/>
+<rect id="Rectangle 18" x="3.125" y="32.375" width="6.875" height="26.25" transform="rotate(-90 3.125 32.375)" fill="black"/>
+</g>
+<g id="Group 4">
+<rect id="Rectangle 15" x="41.875" y="9.875" width="6.875" height="37.5" fill="black"/>
+<rect id="Rectangle 18_2" x="22.5" y="32.375" width="6.875" height="26.25" transform="rotate(-90 22.5 32.375)" fill="black"/>
+</g>
+<path id="Rectangle 21" d="M0 7.375L0 0.5L51.875 0.5V7.375L0 7.375Z" fill="black"/>
+</g>
+</svg>
