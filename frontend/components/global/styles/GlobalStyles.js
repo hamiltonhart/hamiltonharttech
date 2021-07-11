@@ -118,7 +118,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .background-image {
-        background-image: url(${BGImage.src});
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
