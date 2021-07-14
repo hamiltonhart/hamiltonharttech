@@ -15,8 +15,12 @@ export const PageContentContainerStyle = styled(motion.div)`
   /* min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem)); */
   padding: 0;
   display: flex;
-  flex: column;
-  justify-content: center;
+  /* flex: column;
+  justify-content: center; */
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 100%;
 `;
 
 export const PageHeaderContainerStyle = styled(motion.div)`
@@ -117,4 +121,6 @@ export const PageTextArea = styled.div`
   /* min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem)); */
   max-width: 1000px;
   padding: 3rem 3rem 3rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
 `;

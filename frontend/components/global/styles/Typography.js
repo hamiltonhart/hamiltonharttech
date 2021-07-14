@@ -5,6 +5,7 @@ export const PageHeadingStyle = styled.h1`
   font-size: var(--large);
   font-weight: 700;
   margin: ${(props) => (props.margin ? props.margin : `var(--xxlSpacing) 0`)};
+  ${(props) => props.center && `text-align: center;`}
 `;
 
 export const PageH2Style = styled.h2`

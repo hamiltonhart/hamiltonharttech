@@ -9,6 +9,7 @@ import { Nav } from "./Nav";
 import HHTLogo from "../../public/images/HamiltonHartTech_Logo.svg";
 import MenuIcon from "../../public/images/icon-menu.svg";
 import { useToggle } from "../../utilities/global.js/useToggle";
+import Link from "next/link";
 
 export const PageHeader = () => {
   // const [isShowing, setIsShowing] = useState(false);
@@ -34,7 +35,11 @@ export const PageHeader = () => {
     >
       <PageHeaderStyle>
         <FlexContainerStyle justifyContent="space-between">
-          <img src={HHTLogo.src} alt="Hamilton Hart Tech Logo" />
+          <Link href="/">
+            <a>
+              <img src={HHTLogo.src} alt="Hamilton Hart Tech Logo" />
+            </a>
+          </Link>
           <img
             src={MenuIcon.src}
             alt="Menu Icon"
