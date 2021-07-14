@@ -16,19 +16,17 @@ export default function Contact() {
         <title>Hamilton Hart Tech | Contact</title>
       </Head>
       <Page>
-        <PageTextArea>
-          <FlexContainerStyle as="section" flexDirection="column">
-            <PageHeadingStyle
-              margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0"
-              center
-            >
-              Contact
-            </PageHeadingStyle>
-          </FlexContainerStyle>
-          <FlexContainerStyle>
-            <PStyle>Coming soon!</PStyle>
-          </FlexContainerStyle>
-        </PageTextArea>
+        <FlexContainerStyle as="section" flexDirection="column">
+          <PageHeadingStyle
+            margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0"
+            center
+          >
+            Contact
+          </PageHeadingStyle>
+        </FlexContainerStyle>
+        <FlexContainerStyle>
+          <PStyle>Coming soon!</PStyle>
+        </FlexContainerStyle>
       </Page>
     </>
   );

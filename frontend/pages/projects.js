@@ -16,19 +16,17 @@ export default function Projects() {
         <title>Hamilton Hart Tech | Projects</title>
       </Head>
       <Page>
-        <PageTextArea>
-          <FlexContainerStyle as="section" flexDirection="column">
-            <PageHeadingStyle
-              margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0"
-              center
-            >
-              Projects
-            </PageHeadingStyle>
-          </FlexContainerStyle>
-          <FlexContainerStyle>
-            <PStyle>Coming soon!</PStyle>
-          </FlexContainerStyle>
-        </PageTextArea>
+        <FlexContainerStyle as="section" flexDirection="column">
+          <PageHeadingStyle
+            margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0"
+            center
+          >
+            Projects
+          </PageHeadingStyle>
+        </FlexContainerStyle>
+        <FlexContainerStyle>
+          <PStyle>Coming soon!</PStyle>
+        </FlexContainerStyle>
       </Page>
     </>
   );

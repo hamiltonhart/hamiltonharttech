@@ -17,43 +17,41 @@ export default function Home() {
         <title>Hamilton Hart Tech | Home</title>
       </Head>
       <Page>
-        <PageTextArea>
-          <FlexContainerStyle as="section" flexDirection="column">
-            <PageHeadingStyle margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0">
-              Hi, I'm George.
-            </PageHeadingStyle>
-            <div>
-              <PageH2Style
-                className="highlight"
-                margin="var(--lgSpacing) 0"
-                position="relative"
-              >
-                Let's build a website!
-              </PageH2Style>
-            </div>
-          </FlexContainerStyle>
+        <FlexContainerStyle as="section" flexDirection="column">
+          <PageHeadingStyle margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0">
+            Hi, I'm George.
+          </PageHeadingStyle>
+          <div>
+            <PageH2Style
+              className="highlight"
+              margin="var(--lgSpacing) 0"
+              position="relative"
+            >
+              Let's build a website!
+            </PageH2Style>
+          </div>
+        </FlexContainerStyle>
 
-          <FlexContainerStyle
-            as="section"
-            flexDirection="column"
-            margin="var(--xxlSpacing) 0"
-          >
-            <p>I’m a full stack developer out of California.</p>
-            <p>
-              You can see some of the projects I've worked on{" "}
-              <Link href="/">here!</Link>
-            </p>
-            <p>
-              Give me a shout if you'd like to discuss scheduling some work or
-              if you just want to talk tech, Star Wars...
-              <span className="getting-smaller">
-                {" "}
-                horror movies...
-                <span className="getting-smaller"> Harry Potter...</span>
-              </span>
-            </p>
-          </FlexContainerStyle>
-        </PageTextArea>
+        <FlexContainerStyle
+          as="section"
+          flexDirection="column"
+          margin="var(--xxlSpacing) 0"
+        >
+          <p>I’m a full stack developer out of California.</p>
+          <p>
+            You can see some of the projects I've worked on{" "}
+            <Link href="/">here!</Link>
+          </p>
+          <p>
+            Give me a shout if you'd like to discuss scheduling some work or if
+            you just want to talk tech, Star Wars...
+            <span className="getting-smaller">
+              {" "}
+              horror movies...
+              <span className="getting-smaller"> Harry Potter...</span>
+            </span>
+          </p>
+        </FlexContainerStyle>
       </Page>
     </>
   );
