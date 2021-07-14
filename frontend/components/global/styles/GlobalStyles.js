@@ -52,6 +52,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
         --maxWidth: 1000px;
+        --textLength: 800px;
         box-sizing: border-box;
     }
 
@@ -112,7 +113,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     p {
-      font-size: var(--normal);
+      font-size: var(--medium);
       line-height: var(--normalLineSpacing);
       margin-bottom: var(--lgSpacing);
     }

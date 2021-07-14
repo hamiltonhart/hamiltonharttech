@@ -1,15 +1,16 @@
-import { PageContainerStyle, PageTextArea } from "./styles/Containers";
+import {
+  FullPageContainerStyle,
+  PageContentContainerStyle,
+} from "./styles/Containers";
 import { PageHeader } from "./PageHeader";
 import { PageFooter } from "./PageFooter";
 
 export const Page = ({ children }) => {
   return (
-    <>
+    <FullPageContainerStyle>
       <PageHeader />
-      <PageContainerStyle>
-        <PageTextArea>{children}</PageTextArea>
-      </PageContainerStyle>
+      <PageContentContainerStyle>{children}</PageContentContainerStyle>
       <PageFooter />
-    </>
+    </FullPageContainerStyle>
   );
 };

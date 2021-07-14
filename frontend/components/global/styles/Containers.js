@@ -1,25 +1,30 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const PageContainerStyle = styled.div`
+export const FullPageContainerStyle = styled(motion.div)`
+  display: grid;
+  grid-gap: var(--lgSpacing);
+`;
+
+export const PageContentContainerStyle = styled(motion.div)`
   position: relative;
   background-color: var(--pageColor);
   border-radius: var(--pageBorderRadius);
-  min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem));
+  /* min-height: calc(100vh - (130rem)); */
+  min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem + 22.1rem + 2rem));
+  /* min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem)); */
   padding: 0;
   display: flex;
   flex: column;
   justify-content: center;
 `;
 
-export const PageHeaderStyle = styled.header`
+export const PageHeaderContainerStyle = styled(motion.div)`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  padding: 1.2rem 3rem;
-  border-radius: var(--pageBorderRadius);
   height: 8rem;
-  margin-bottom: var(--lgSpacing);
+  z-index: 900;
+  border-radius: var(--pageBorderRadius);
   background: linear-gradient(
     116.35deg,
     #653cad 16.11%,
@@ -29,11 +34,18 @@ export const PageHeaderStyle = styled.header`
   );
 `;
 
+export const PageHeaderStyle = styled(motion.header)`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.2rem 3rem;
+  border-radius: var(--pageBorderRadius);
+`;
+
 export const PageFooterStyle = styled.footer`
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: var(--medSpacing) 0;
   ul {
     padding: var(--smSpacing) var(--xxlSpacing);
     margin-bottom: var(--medSpacing);
@@ -68,6 +80,26 @@ export const PageFooterStyle = styled.footer`
   }
 `;
 
+export const NavStyle = styled(motion.nav)`
+  padding: var(--xlSpacing) 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    margin-bottom: var(--medSpacing);
+    a {
+      font-family: "Montserrat", sans-serif;
+      font-size: var(--mediumBig);
+      color: black;
+      :hover {
+        font-weight: 700;
+      }
+    }
+  }
+`;
+
 export const FlexContainerStyle = styled.div`
   display: flex;
   flex-direction: ${(props) =>
@@ -82,7 +114,7 @@ export const FlexContainerStyle = styled.div`
 export const PageTextArea = styled.div`
   position: relative;
   border-radius: var(--pageBorderRadius);
-  min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem));
+  /* min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem)); */
   max-width: 1000px;
   padding: 3rem 3rem 3rem 3rem;
 `;
