@@ -1,7 +1,6 @@
 import {
   FullPageContainerStyle,
   PageContentContainerStyle,
-  PageTextArea,
 } from "./styles/Containers";
 import { PageHeader } from "./PageHeader";
 import { PageFooter } from "./PageFooter";
