@@ -27,19 +27,19 @@ export default function Home() {
             Hi, I'm George.
           </PageHeadingStyle>
           <div>
-            <SlideIn>
-              <Link href="/contact">
-                <motion.a variants={h2Variants}>
-                  <PageH2Style
-                    className="highlight lift"
-                    margin="var(--lgSpacing) 0"
-                    position="relative"
-                  >
-                    Let's build a website!
-                  </PageH2Style>
-                </motion.a>
-              </Link>
-            </SlideIn>
+            {/* <SlideIn> */}
+            <Link href="/contact">
+              <a>
+                <PageH2Style
+                  className="highlight lift"
+                  margin="var(--lgSpacing) 0"
+                  position="relative"
+                >
+                  Let's build a website!
+                </PageH2Style>
+              </a>
+            </Link>
+            {/* </SlideIn> */}
           </div>
         </FlexContainerStyle>
 
