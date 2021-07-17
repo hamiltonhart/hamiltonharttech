@@ -51,7 +51,7 @@ export default function Home() {
           <p>I’m a full stack developer out of California.</p>
           <p>
             You can see some of the projects I've worked on{" "}
-            <Link href="/">here!</Link>
+            <Link href="/projects">here!</Link>
           </p>
           <p>
             Give me a shout if you'd like to discuss scheduling some work or if

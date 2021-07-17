@@ -4,19 +4,20 @@ import { motion } from "framer-motion";
 export const FullPageContainerStyle = styled(motion.div)`
   display: grid;
   grid-gap: var(--lgSpacing);
+  width: clamp(0px, 100%, 1500px);
 `;
 
 export const PageContentContainerStyle = styled(motion.div)`
   position: relative;
   background-color: var(--pageColor);
   border-radius: var(--pageBorderRadius);
-  min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem + 22.1rem + 2rem));
+  min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem + 24.2rem + 2rem));
   padding: 0;
   display: flex;
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  min-width: 100%;
+  width: clamp(0px, 100%, 100%);
 `;
 
 export const PageHeaderContainerStyle = styled(motion.div)`
@@ -45,10 +46,15 @@ export const PageHeaderStyle = styled(motion.header)`
 export const PageFooterStyle = styled.footer`
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0;
   ul {
+    display: flex;
+    justify-content: space-between;
     padding: var(--smSpacing) var(--xxlSpacing);
     margin-bottom: var(--medSpacing);
+    width: 100%;
+    max-width: 500px;
   }
   li {
     font-family: "Montserrat", sans-serif;
@@ -61,6 +67,9 @@ export const PageFooterStyle = styled.footer`
     background: var(--primary);
     border-radius: var(--pageBorderRadius);
     padding: var(--smSpacing) var(--xxlSpacing);
+    width: 100%;
+    max-width: 500px;
+
     a {
       display: flex;
       align-items: center;
