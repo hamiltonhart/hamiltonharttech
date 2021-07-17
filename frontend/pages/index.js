@@ -1,34 +1,45 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
-import { Page } from "../components/global/Page";
-import {
-  FlexContainerStyle,
-  PageTextArea,
-} from "../components/global/styles/Containers";
+import { PageTextArea } from "../components/global/PageTextArea";
+import { SlideIn } from "../components/global/SlideIn";
+import { FlexContainerStyle } from "../components/global/styles/Containers";
 import {
   PageHeadingStyle,
   PageH2Style,
 } from "../components/global/styles/Typography";
 
 export default function Home() {
+  const h2Variants = {
+    hover: {
+      scale: 2,
+    },
+  };
+
   return (
     <>
       <Head>
         <title>Hamilton Hart Tech | Home</title>
       </Head>
-      <Page>
+      <PageTextArea>
         <FlexContainerStyle as="section" flexDirection="column">
           <PageHeadingStyle margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0">
             Hi, I'm George.
           </PageHeadingStyle>
           <div>
-            <PageH2Style
-              className="highlight"
-              margin="var(--lgSpacing) 0"
-              position="relative"
-            >
-              Let's build a website!
-            </PageH2Style>
+            <SlideIn>
+              <Link href="/contact">
+                <motion.a variants={h2Variants}>
+                  <PageH2Style
+                    className="highlight lift"
+                    margin="var(--lgSpacing) 0"
+                    position="relative"
+                  >
+                    Let's build a website!
+                  </PageH2Style>
+                </motion.a>
+              </Link>
+            </SlideIn>
           </div>
         </FlexContainerStyle>
 
@@ -52,7 +63,7 @@ export default function Home() {
             </span>
           </p>
         </FlexContainerStyle>
-      </Page>
+      </PageTextArea>
     </>
   );
 }

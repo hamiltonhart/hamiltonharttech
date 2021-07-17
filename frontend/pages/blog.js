@@ -6,11 +6,11 @@ import {
   PStyle,
 } from "../components/global/styles/Typography";
 
-export default function Contact() {
+export default function Blog() {
   return (
     <>
       <Head>
-        <title>Hamilton Hart Tech | Contact</title>
+        <title>Hamilton Hart Tech | Blog</title>
       </Head>
       <PageTextArea>
         <FlexContainerStyle as="section" flexDirection="column">
@@ -18,7 +18,7 @@ export default function Contact() {
             margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0"
             center
           >
-            Contact
+            Blog
           </PageHeadingStyle>
         </FlexContainerStyle>
         <FlexContainerStyle>

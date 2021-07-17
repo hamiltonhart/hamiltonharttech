@@ -9,16 +9,16 @@ export const PageFooter = () => {
     <PageFooterStyle>
       <FlexContainerStyle as="ul" justifyContent="space-between">
         <li>
-          <Link href="#">About</Link>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <Link href="#">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
         <li>
-          <Link href="#">Projects</Link>
+          <Link href="/projects">Projects</Link>
         </li>
         <li>
-          <Link href="#">Blog</Link>
+          <Link href="/blog">Blog</Link>
         </li>
       </FlexContainerStyle>
       <FlexContainerStyle className="social" justifyContent="space-around">

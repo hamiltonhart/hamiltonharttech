@@ -1,9 +1,6 @@
 import Head from "next/head";
-import { Page } from "../components/global/Page";
-import {
-  FlexContainerStyle,
-  PageTextArea,
-} from "../components/global/styles/Containers";
+import { PageTextArea } from "../components/global/PageTextArea";
+import { FlexContainerStyle } from "../components/global/styles/Containers";
 import {
   PageHeadingStyle,
   PStyle,
@@ -15,7 +12,7 @@ export default function Projects() {
       <Head>
         <title>Hamilton Hart Tech | Projects</title>
       </Head>
-      <Page>
+      <PageTextArea>
         <FlexContainerStyle as="section" flexDirection="column">
           <PageHeadingStyle
             margin="var(--xxlSpacing) 0 var(--xxlSpacing) 0"
@@ -27,7 +24,7 @@ export default function Projects() {
         <FlexContainerStyle>
           <PStyle>Coming soon!</PStyle>
         </FlexContainerStyle>
-      </Page>
+      </PageTextArea>
     </>
   );
 }

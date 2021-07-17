@@ -10,13 +10,9 @@ export const PageContentContainerStyle = styled(motion.div)`
   position: relative;
   background-color: var(--pageColor);
   border-radius: var(--pageBorderRadius);
-  /* min-height: calc(100vh - (130rem)); */
   min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem + 22.1rem + 2rem));
-  /* min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem)); */
   padding: 0;
   display: flex;
-  /* flex: column;
-  justify-content: center; */
   display: grid;
   margin-left: auto;
   margin-right: auto;
@@ -115,10 +111,9 @@ export const FlexContainerStyle = styled.div`
   ${(props) => props.padding && `padding: ${props.padding};`}
 `;
 
-export const PageTextArea = styled.div`
+export const PageTextAreaStyle = styled(motion.div)`
   position: relative;
   border-radius: var(--pageBorderRadius);
-  /* min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem)); */
   max-width: 1000px;
   padding: 3rem 3rem 3rem 3rem;
   margin-left: auto;

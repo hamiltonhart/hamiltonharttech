@@ -137,7 +137,16 @@ export const GlobalStyle = createGlobalStyle`
         background-color: var(--primary);
         padding: var(--xsSpacing) var(--medSpacing);
         transform: skewX(-7deg);
-        border-radius: 1rem;
+        border-radius: .5rem;
         color: var(--primaryContrast);
+    }
+
+    .highlight a {
+        color: var(--primaryContrast);
+    }
+
+    .lift {
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
     }
 `;

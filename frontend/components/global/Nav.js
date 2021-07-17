@@ -23,7 +23,7 @@ const navItems = {
   show: { opacity: 1, y: 0 },
 };
 
-const navItemList = ["Home", "About", "Projects", "Contact"];
+const navItemList = ["Home", "About", "Projects", "Contact", "Blog"];
 
 export const Nav = ({ toggle }) => {
   return (
