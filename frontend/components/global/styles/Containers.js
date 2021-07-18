@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const FullPageContainerStyle = styled(motion.div)`
   display: grid;
   grid-gap: var(--lgSpacing);
-  width: clamp(0px, 100%, 1500px);
+  width: clamp(0px, 100%, var(--mainContainerWidth));
 `;
 
 export const PageContentContainerStyle = styled(motion.div)`

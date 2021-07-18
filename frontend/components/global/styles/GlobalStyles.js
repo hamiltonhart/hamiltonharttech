@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
 
         --maxWidth: 1000px;
         --textLength: 800px;
+        --mainContainerWidth: 1500px;
         box-sizing: border-box;
     }
 
