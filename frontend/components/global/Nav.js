@@ -25,9 +25,9 @@ const navItems = {
 
 const navItemList = ["Home", "About", "Projects", "Contact", "Blog"];
 
-export const Nav = ({ toggle }) => {
+export const Nav = ({ toggle, isShowing, className }) => {
   return (
-    <NavStyle>
+    <NavStyle className={className}>
       <motion.ul
         variants={navContainer}
         initial="hidden"
@@ -37,7 +37,7 @@ export const Nav = ({ toggle }) => {
         {navItemList.map((navItem) => (
           <motion.li key={navItem} variants={navItems}>
             <Link href={navItem === "Home" ? "/" : `/${navItem.toLowerCase()}`}>
-              <a onClick={toggle}>{navItem}</a>
+              <a onClick={() => isShowing && toggle()}>{navItem}</a>
             </Link>
           </motion.li>
         ))}

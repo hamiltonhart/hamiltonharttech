@@ -50,6 +50,11 @@ export const GlobalStyle = createGlobalStyle`
         --smBtnSpacing: 1.2rem 2rem;
         --lgBtnSpacing: 1.6rem 3rem;
 
+        ${"" /* Breakpoints */}
+        --lgScreen: 1200px;
+        --medScreen: 900px;
+        --smScreen: 500px;
+
 
         --maxWidth: 1000px;
         --textLength: 800px;
@@ -162,4 +167,22 @@ export const GlobalStyle = createGlobalStyle`
        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     }
+
+    .nav-desktop {
+        display: none;
+        @media screen and (min-width: 900px) {
+            display: flex;
+        }
+    }
+
+  .nav-mobile {
+      ${
+        "" /* @media screen and (min-width: var(--medScreen)) {
+          display: none;
+      } */
+      }
+      @media screen and (min-width: 900px) {
+          display: none;
+      }
+  }
 `;

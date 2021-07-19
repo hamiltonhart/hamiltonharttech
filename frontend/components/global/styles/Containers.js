@@ -11,7 +11,7 @@ export const PageContentContainerStyle = styled(motion.div)`
   position: relative;
   background-color: var(--pageColor);
   border-radius: var(--pageBorderRadius);
-  min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem + 24.2rem + 2rem));
+  min-height: calc(100vh - (1.6rem + 1.6rem + 8rem + 2rem + 24.1rem + 2rem));
   padding: 0;
   display: flex;
   display: grid;
@@ -36,8 +36,8 @@ export const PageHeaderContainerStyle = styled(motion.div)`
 `;
 
 export const PageHeaderStyle = styled(motion.header)`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   padding: 1.2rem 3rem;
   border-radius: var(--pageBorderRadius);
@@ -90,20 +90,36 @@ export const PageFooterStyle = styled.footer`
 `;
 
 export const NavStyle = styled(motion.nav)`
+  grid-column: span 2;
   padding: var(--xlSpacing) 0;
+  @media screen and (min-width: 900px) {
+    padding: unset;
+    justify-self: end;
+    grid-column: span 1;
+  }
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: var(--medSpacing);
+      padding-right: var(--smSpacing);
+    }
   }
   li {
     margin-bottom: var(--medSpacing);
+    @media screen and (min-width: 900px) {
+      margin-bottom: 0;
+    }
     a {
       font-family: "Montserrat", sans-serif;
       font-size: var(--mediumBig);
       color: black;
       :hover {
-        font-weight: 700;
+        /* font-weight: 700; */
+        color: var(--white);
       }
     }
   }

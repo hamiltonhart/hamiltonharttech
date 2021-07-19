@@ -10,6 +10,7 @@ import MenuIcon from "../../public/images/icon-menu.svg";
 import CloseIcon from "../../public/images/icon-close.svg";
 import { useToggle } from "../../utilities/global.js/useToggle";
 import Link from "next/link";
+import { NavMenuIcons } from "./NavMenuIcons";
 
 export const PageHeader = () => {
   const { isShowing, toggle } = useToggle();
@@ -45,43 +46,17 @@ export const PageHeader = () => {
       animate={isShowing ? "open" : "closed"}
     >
       <PageHeaderStyle>
-        <FlexContainerStyle justifyContent="space-between">
-          <Link href="/">
-            <a>
-              <img src={HHTLogo.src} alt="Hamilton Hart Tech Logo" />
-            </a>
-          </Link>
-          {!isShowing && (
-            <AnimatePresence exitBeforeEnter>
-              <motion.img
-                src={MenuIcon.src}
-                alt="Menu Icon"
-                style={{ maxWidth: "3rem" }}
-                onClick={toggle}
-                variants={iconVariants}
-                initial="hidden"
-                animate="showing"
-                exit="exit"
-              />
-            </AnimatePresence>
-          )}
-          {isShowing && (
-            <AnimatePresence exitBeforeEnter>
-              <motion.img
-                src={CloseIcon.src}
-                alt="Close Icon"
-                style={{ maxWidth: "4rem" }}
-                onClick={toggle}
-                variants={iconVariants}
-                initial="hidden"
-                animate="showing"
-                exit="exit"
-              />
-            </AnimatePresence>
-          )}
-        </FlexContainerStyle>
+        <Link href="/">
+          <a>
+            <img src={HHTLogo.src} alt="Hamilton Hart Tech Logo" />
+          </a>
+        </Link>
+        <NavMenuIcons toggle={toggle} isShowing={isShowing} />
+        <Nav className="nav-desktop" toggle={toggle} isShowing={isShowing} />
         <AnimatePresence>
-          {isShowing && <Nav toggle={toggle} />}
+          {isShowing && (
+            <Nav toggle={toggle} isShowing={isShowing} className="nav-mobile" />
+          )}
         </AnimatePresence>
       </PageHeaderStyle>
     </PageHeaderContainerStyle>

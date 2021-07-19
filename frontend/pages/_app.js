@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps, router }) {
         </AnimatePresence>
         <PageFooter />
       </FullPageContainerStyle>
-      ;
     </>
   );
 }
