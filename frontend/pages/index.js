@@ -20,6 +20,7 @@ export default function Home() {
     <>
       <Head>
         <title>Hamilton Hart Tech | Home</title>
+        <meta name="description" content="" />
       </Head>
       <PageTextArea>
         <FlexContainerStyle as="section" flexDirection="column">

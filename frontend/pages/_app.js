@@ -6,7 +6,7 @@ import {
   PageContentContainerStyle,
 } from "../components/global/styles/Containers";
 import { PageHeader } from "../components/global/PageHeader";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { PageFooter } from "../components/global/PageFooter";
 
 function MyApp({ Component, pageProps, router }) {
