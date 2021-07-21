@@ -19,6 +19,16 @@ export const PageH2Style = styled.h2`
 `;
 
 export const PStyle = styled.p`
+  font-size: var(--bitMore);
   color: ${(props) => (props.color ? props.color : "inherit")};
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
+  ${(props) => props.margin && `margin: ${props.margin};`}
+
+  .bold {
+    font-weight: 700;
+  }
+`;
+
+export const SpanStyle = styled.span`
+  ${(props) => props.bold && `font-weight: 700;`}
 `;

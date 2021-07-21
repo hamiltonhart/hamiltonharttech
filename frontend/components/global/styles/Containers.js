@@ -64,7 +64,7 @@ export const PageFooterStyle = styled.footer`
     }
   }
   .social {
-    background: var(--primary);
+    background: var(--secondary);
     border-radius: var(--pageBorderRadius);
     padding: var(--smSpacing) var(--xxlSpacing);
     width: 100%;

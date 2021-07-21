@@ -46,6 +46,7 @@ export const GlobalStyle = createGlobalStyle`
         --lgSpacing: 2rem;
         --xlSpacing: 2.4rem;
         --xxlSpacing: 3rem;
+        --evenBiggerSpacing: 4.2rem;
         --hugeSpacing: 6rem;
         --smBtnSpacing: 1.2rem 2rem;
         --lgBtnSpacing: 1.6rem 3rem;
@@ -94,6 +95,10 @@ export const GlobalStyle = createGlobalStyle`
 
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: unset;
+    }
+
     a {
         cursor: pointer;
     }
@@ -135,7 +140,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     p {
-      font-size: var(--medium);
+      ${"" /* font-size: var(--medium); */}
+      font-size: var(--normal);
       line-height: var(--normalLineSpacing);
       margin-bottom: var(--lgSpacing);
     }
