@@ -5,7 +5,9 @@ import {
   PStyle,
 } from "../components/global/styles/Typography";
 
-export default function Custom404() {
+interface Props {}
+
+export default function Custom404({}: Props) {
   return (
     <>
       <Head>
