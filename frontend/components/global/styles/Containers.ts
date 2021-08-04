@@ -118,14 +118,19 @@ export const NavStyle = styled(motion.nav)`
       font-size: var(--mediumBig);
       color: black;
       :hover {
-        /* font-weight: 700; */
         color: var(--white);
       }
     }
   }
 `;
 
-export const FlexContainerStyle = styled.div`
+export const FlexContainerStyle = styled.div<{
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  margin?: string;
+  padding?: string;
+}>`
   display: flex;
   flex-direction: ${(props) =>
     props.flexDirection ? props.flexDirection : `row`};

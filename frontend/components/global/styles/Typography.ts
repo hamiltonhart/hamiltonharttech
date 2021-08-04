@@ -1,6 +1,10 @@
+import { stringify } from "querystring";
 import styled from "styled-components";
 
-export const PageHeadingStyle = styled.h1`
+export const PageHeadingStyle = styled.h1<{
+  margin?: string;
+  center?: boolean;
+}>`
   font-family: "Montserrat", sans-serif;
   font-size: var(--large);
   font-weight: 700;
@@ -8,7 +12,10 @@ export const PageHeadingStyle = styled.h1`
   ${(props) => props.center && `text-align: center;`}
 `;
 
-export const PageH2Style = styled.h2`
+export const PageH2Style = styled.h2<{
+  margin?: string;
+  position?: string;
+}>`
   font-family: "Montserrat", sans-serif;
   display: inline-block;
   font-size: var(--mediumBig);
@@ -18,7 +25,10 @@ export const PageH2Style = styled.h2`
   ${(props) => props.position && `position: ${props.position};`};
 `;
 
-export const PStyle = styled.p`
+export const PStyle = styled.p<{
+  textAlign?: string;
+  margin?: string;
+}>`
   font-size: var(--bitMore);
   color: ${(props) => (props.color ? props.color : "inherit")};
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
@@ -29,6 +39,8 @@ export const PStyle = styled.p`
   }
 `;
 
-export const SpanStyle = styled.span`
+export const SpanStyle = styled.span<{
+  bold?: boolean;
+}>`
   ${(props) => props.bold && `font-weight: 700;`}
 `;
