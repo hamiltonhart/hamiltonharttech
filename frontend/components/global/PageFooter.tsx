@@ -4,7 +4,11 @@ import IG_Logo from "../../public/images/glyph-logo_May2016.png";
 import GitHub_Logo from "../../public/images/GitHub-Mark-64px.png";
 import { PStyle } from "./styles/Typography";
 
-export const PageFooter = () => {
+interface Props {
+
+}
+
+export const PageFooter = ({}:Props) => {
   return (
     <PageFooterStyle>
       <FlexContainerStyle as="ul" justifyContent="space-between">

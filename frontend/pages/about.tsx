@@ -1,10 +1,7 @@
 import Head from "next/head";
 import { SectionH2Style } from "../components/about/styles/Typography";
 import { PageTextArea } from "../components/global/PageTextArea";
-import {
-  FlexContainerStyle,
-  SpanStyle,
-} from "../components/global/styles/Containers";
+import { FlexContainerStyle } from "../components/global/styles/Containers";
 import {
   PageHeadingStyle,
   PStyle,

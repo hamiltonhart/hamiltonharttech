@@ -3,7 +3,11 @@ import {
   PageTextAreaStyle,
 } from "./styles/Containers";
 
-export const PageTextArea = ({ children }) => {
+interface Props {
+  children: React.ReactNode
+}
+
+export const PageTextArea = ({ children }: Props) => {
   const pageVariants = {
     start: { y: -10, opacity: 0 },
     in: { y: 0, opacity: 1 },

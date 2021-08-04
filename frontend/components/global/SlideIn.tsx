@@ -14,7 +14,11 @@ const variants = {
   },
 };
 
-export const SlideIn = ({ children }) => {
+interface Props {
+  children: React.ReactNode
+}
+
+export const SlideIn = ({ children }: Props) => {
   return (
     <motion.div variants={variants} initial="initial" animate="animate">
       {children}

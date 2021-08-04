@@ -2,11 +2,16 @@ import {
   FullPageContainerStyle,
   PageContentContainerStyle,
 } from "./styles/Containers";
+import {PageTextArea} from "./PageTextArea";
 import { PageHeader } from "./PageHeader";
 import { PageFooter } from "./PageFooter";
 import { AnimatePresence, motion } from "framer-motion";
 
-export const Page = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+export const Page = ({ children }: Props) => {
   return (
     <FullPageContainerStyle>
       <PageHeader />

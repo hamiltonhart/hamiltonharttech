@@ -12,7 +12,9 @@ import { useToggle } from "../../utilities/global.js/useToggle";
 import Link from "next/link";
 import { NavMenuIcons } from "./NavMenuIcons";
 
-export const PageHeader = () => {
+interface Props {}
+
+export const PageHeader = ({}: Props) => {
   const { isShowing, toggle } = useToggle();
 
   const variants = {

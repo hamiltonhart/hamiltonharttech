@@ -23,9 +23,15 @@ const navItems = {
   show: { opacity: 1, y: 0 },
 };
 
-const navItemList = ["Home", "About", "Projects", "Contact", "Blog"];
+const navItemList:string[] = ["Home", "About", "Projects", "Contact", "Blog"];
 
-export const Nav = ({ toggle, isShowing, className }) => {
+interface Props {
+  isShowing: boolean,
+  toggle: Function,
+  className: string,
+}
+
+export const Nav = ({ toggle, isShowing, className }:Props) => {
   return (
     <NavStyle className={className}>
       <motion.ul

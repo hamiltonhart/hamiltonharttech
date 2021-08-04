@@ -3,7 +3,12 @@ import MenuIcon from "../../public/images/icon-menu.svg";
 import CloseIcon from "../../public/images/icon-close.svg";
 import { NavIconButtonStyle } from "./styles/Buttons";
 
-export const NavMenuIcons = ({ toggle, isShowing }) => {
+interface Props {
+  toggle: Function,
+  isShowing: boolean
+}
+
+export const NavMenuIcons = ({ toggle, isShowing }:Props) => {
   const iconVariants = {
     hidden: {
       rotate: "0deg",

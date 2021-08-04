@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-export const useToggle = (initial) => {
+interface ReturnValue {
+  isShowing: boolean,
+  toggle: Function
+}
+
+export const useToggle = (initial?:boolean): ReturnValue => {
   const [isShowing, setIsShowing] = useState(initial || false);
 
   const toggle = () => {
